@@ -478,3 +478,72 @@ MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQ
 2024-08-17 14:51:17.862 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5146/DataTransfer/transfer - null 0
 2024-08-17 14:51:17.868 +03:00 [INF] Executing endpoint 'DataTransferApp.Controllers.DataTransferController.TransferData (DB_TO_DP_Test)'
 2024-08-17 14:51:17.870 +03:00 [INF] Route matched with {action = "TransferData", controller = "DataTransfer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TransferData() on controller DataTransferApp.Controllers.DataTransferController (DB_TO_DP_Test).
+2024-08-17 14:56:10.356 +03:00 [WRN] The WebRootPath was not found: C:\Users\AbdallahSelim\source\repos\Cegedim\DB_TO_DP_Test\DB_TO_DP_Test\wwwroot. Static files may be unavailable.
+2024-08-17 14:56:10.479 +03:00 [INF] Now listening on: http://localhost:5146
+2024-08-17 14:56:10.482 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-17 14:56:10.484 +03:00 [INF] Hosting environment: Development
+2024-08-17 14:56:10.485 +03:00 [INF] Content root path: C:\Users\AbdallahSelim\source\repos\Cegedim\DB_TO_DP_Test\DB_TO_DP_Test
+2024-08-17 14:56:16.608 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5146/swagger/index.html - null null
+2024-08-17 14:56:16.853 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5146/swagger/index.html - 200 null text/html;charset=utf-8 257.0955ms
+2024-08-17 14:56:16.985 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5146/_vs/browserLink - null null
+2024-08-17 14:56:16.985 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5146/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-17 14:56:16.998 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5146/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 13.0095ms
+2024-08-17 14:56:17.044 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5146/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.2578ms
+2024-08-17 14:56:17.205 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5146/swagger/v1/swagger.json - null null
+2024-08-17 14:56:17.277 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5146/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 71.816ms
+2024-08-17 14:56:29.482 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5146/DataTransfer/transfer - null 0
+2024-08-17 14:56:29.489 +03:00 [WRN] Failed to determine the https port for redirect.
+2024-08-17 14:56:29.505 +03:00 [INF] Executing endpoint 'DataTransferApp.Controllers.DataTransferController.TransferData (DB_TO_DP_Test)'
+2024-08-17 14:56:29.523 +03:00 [INF] Route matched with {action = "TransferData", controller = "DataTransfer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TransferData() on controller DataTransferApp.Controllers.DataTransferController (DB_TO_DP_Test).
+2024-08-17 14:57:21.488 +03:00 [INF] Data transfer successful.
+2024-08-17 14:57:21.499 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-08-17 14:57:21.505 +03:00 [INF] Executed action DataTransferApp.Controllers.DataTransferController.TransferData (DB_TO_DP_Test) in 51976.2368ms
+2024-08-17 14:57:21.507 +03:00 [INF] Executed endpoint 'DataTransferApp.Controllers.DataTransferController.TransferData (DB_TO_DP_Test)'
+2024-08-17 14:57:21.510 +03:00 [INF] HTTP POST /DataTransfer/transfer responded 200 in 52005.7008 ms
+2024-08-17 14:57:21.513 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5146/DataTransfer/transfer - 200 null text/plain; charset=utf-8 52031.41ms
+2024-08-17 15:18:50.781 +03:00 [WRN] The WebRootPath was not found: C:\Users\AbdallahSelim\source\repos\Cegedim\DB_TO_DP_Test\DB_TO_DP_Test\wwwroot. Static files may be unavailable.
+2024-08-17 15:18:50.904 +03:00 [INF] Now listening on: http://localhost:5146
+2024-08-17 15:18:50.907 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-17 15:18:50.908 +03:00 [INF] Hosting environment: Development
+2024-08-17 15:18:50.908 +03:00 [INF] Content root path: C:\Users\AbdallahSelim\source\repos\Cegedim\DB_TO_DP_Test\DB_TO_DP_Test
+2024-08-17 15:18:58.296 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5146/swagger/index.html - null null
+2024-08-17 15:18:58.534 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5146/swagger/index.html - 200 null text/html;charset=utf-8 247.9571ms
+2024-08-17 15:18:58.581 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5146/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-17 15:18:58.589 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5146/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 7.9273ms
+2024-08-17 15:18:58.597 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5146/_vs/browserLink - null null
+2024-08-17 15:18:58.714 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5146/_vs/browserLink - 200 null text/javascript; charset=UTF-8 116.6759ms
+2024-08-17 15:18:58.892 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5146/swagger/v1/swagger.json - null null
+2024-08-17 15:18:58.961 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5146/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 69.4321ms
+2024-08-17 15:19:25.028 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5146/DataTransfer/transfer - null 0
+2024-08-17 15:19:25.035 +03:00 [WRN] Failed to determine the https port for redirect.
+2024-08-17 15:19:25.050 +03:00 [INF] Executing endpoint 'DataTransferApp.Controllers.DataTransferController.TransferData (DB_TO_DP_Test)'
+2024-08-17 15:19:25.068 +03:00 [INF] Route matched with {action = "TransferData", controller = "DataTransfer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TransferData() on controller DataTransferApp.Controllers.DataTransferController (DB_TO_DP_Test).
+2024-08-17 15:20:08.775 +03:00 [INF] Data transfer successful.
+2024-08-17 15:20:08.786 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-08-17 15:20:08.793 +03:00 [INF] Executed action DataTransferApp.Controllers.DataTransferController.TransferData (DB_TO_DP_Test) in 43717.7153ms
+2024-08-17 15:20:08.795 +03:00 [INF] Executed endpoint 'DataTransferApp.Controllers.DataTransferController.TransferData (DB_TO_DP_Test)'
+2024-08-17 15:20:08.797 +03:00 [INF] HTTP POST /DataTransfer/transfer responded 200 in 43748.2236 ms
+2024-08-17 15:20:08.801 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5146/DataTransfer/transfer - 200 null text/plain; charset=utf-8 43772.5794ms
+2024-08-17 16:06:26.123 +03:00 [WRN] The WebRootPath was not found: C:\Users\AbdallahSelim\source\repos\Cegedim\DB_TO_DP_Test\DB_TO_DP_Test\wwwroot. Static files may be unavailable.
+2024-08-17 16:06:26.465 +03:00 [INF] Now listening on: http://localhost:5146
+2024-08-17 16:06:26.468 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-17 16:06:26.469 +03:00 [INF] Hosting environment: Development
+2024-08-17 16:06:26.470 +03:00 [INF] Content root path: C:\Users\AbdallahSelim\source\repos\Cegedim\DB_TO_DP_Test\DB_TO_DP_Test
+2024-08-17 16:06:34.315 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5146/swagger/index.html - null null
+2024-08-17 16:06:34.773 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5146/swagger/index.html - 200 null text/html;charset=utf-8 473.107ms
+2024-08-17 16:06:34.863 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5146/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-17 16:06:34.864 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5146/_vs/browserLink - null null
+2024-08-17 16:06:34.874 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5146/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 10.8858ms
+2024-08-17 16:06:35.125 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5146/_vs/browserLink - 200 null text/javascript; charset=UTF-8 262.2506ms
+2024-08-17 16:06:35.395 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5146/swagger/v1/swagger.json - null null
+2024-08-17 16:06:35.508 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5146/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 113.3252ms
+2024-08-17 16:06:46.911 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5146/DataTransfer/transfer - null 0
+2024-08-17 16:06:46.943 +03:00 [WRN] Failed to determine the https port for redirect.
+2024-08-17 16:06:46.975 +03:00 [INF] Executing endpoint 'DataTransferApp.Controllers.DataTransferController.TransferData (DB_TO_DP_Test)'
+2024-08-17 16:06:47.011 +03:00 [INF] Route matched with {action = "TransferData", controller = "DataTransfer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TransferData() on controller DataTransferApp.Controllers.DataTransferController (DB_TO_DP_Test).
+2024-08-17 16:07:32.493 +03:00 [INF] Data transfer successful.
+2024-08-17 16:07:32.505 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-08-17 16:07:32.511 +03:00 [INF] Executed action DataTransferApp.Controllers.DataTransferController.TransferData (DB_TO_DP_Test) in 45494.4228ms
+2024-08-17 16:07:32.513 +03:00 [INF] Executed endpoint 'DataTransferApp.Controllers.DataTransferController.TransferData (DB_TO_DP_Test)'
+2024-08-17 16:07:32.516 +03:00 [INF] HTTP POST /DataTransfer/transfer responded 200 in 45543.1756 ms
+2024-08-17 16:07:32.519 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5146/DataTransfer/transfer - 200 null text/plain; charset=utf-8 45608.06ms

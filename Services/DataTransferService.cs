@@ -38,17 +38,20 @@ namespace DataTransferApp.Services
                 {
                     var data = await sourceConnection.QueryAsync($"SELECT * FROM {table};");
 
+
+
                     if (data != null)
                     {
+                        var batchSize = 1000; // Adjust based on performance testing
+                        var rows = new List<string>();
+                        var columnNames = string.Join(",", ((IDictionary<string, object>)data.First()).Keys);
                         foreach (var row in data)
                         {
-                            var columnNames = string.Join(",", ((IDictionary<string, object>)row).Keys);
-
                             var columnValues = string.Join(",", ((IDictionary<string, object>)row).Values.Select(value =>
                             {
                                 if (value is string || value is DateTime)
                                 {
-                                    return $"'{value.ToString().Replace("'", "''")}'"; // Escaping single quotes for SQL
+                                    return $"'{value.ToString().Replace("'", "''")}'";
                                 }
                                 else if (value == null)
                                 {
@@ -59,10 +62,27 @@ namespace DataTransferApp.Services
                                     return value.ToString();
                                 }
                             }));
+                            rows.Add($"({columnValues})");
 
-                            var insertQuery = $"INSERT INTO {table} ({columnNames}) VALUES ({columnValues});";
+                            if (rows.Count >= batchSize)
+                            {
+                                using var transaction = await destinationConnection.BeginTransactionAsync();
+                                var insertQuery = $"INSERT INTO {table} ({columnNames}) VALUES {string.Join(",", rows)};";
+                                using var command = new MySqlCommand(insertQuery, destinationConnection, transaction);
+                                object value = await command.ExecuteNonQueryAsync();
+                                rows.Clear();
+                                await transaction.CommitAsync();
+
+                            }
+                        }
+                        if (rows.Count > 0)
+                        {
+                            var insertQuery = $"INSERT INTO {table} ({columnNames}) VALUES {string.Join(",", rows)};";
                             await destinationConnection.ExecuteAsync(insertQuery);
                         }
+
+
+
                     }
 
                 }
