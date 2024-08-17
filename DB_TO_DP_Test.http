@@ -1,0 +1,6 @@
+@DB_TO_DP_Test_HostAddress = http://localhost:5146
+
+GET {{DB_TO_DP_Test_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
